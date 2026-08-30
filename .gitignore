@@ -1,0 +1,53 @@
+# Local upstream source mirrors
+sources/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.envrc
+.direnv/
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.npmrc
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Dependencies and build output
+node_modules/
+dist/
+build/
+out/
+coverage/
+.next/
+.nuxt/
+.svelte-kit/
+.vite/
+pages-dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs, caches and temporary files
+*.log
+.cache/
+.tmp/
+tmp/
+
+# Editors and operating systems
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
