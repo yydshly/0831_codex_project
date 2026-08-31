@@ -10,7 +10,7 @@
 
 | 研究项目 | 上游仓库 | 研究重点 | 状态 | 研究笔记 | Demo | 最近更新 |
 | --- | --- | --- | --- | --- | --- | --- |
-| early.tools | [在线网页](https://www.early.tools/) | 五类信息来源、生命周期跟踪、策展飞轮与 Founder Growth 工具 | `validated` | [研究笔记](research/early-tools/README.md) | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | 2026-09-01 |
+| early.tools | [在线网页](https://www.early.tools/) | 将分散的早期产品线索策展为可筛选、可持续跟踪的产品情报，帮助用户更早发现机会，并帮助创始人完成验证与分发 | `validated` | [研究笔记](research/early-tools/README.md) | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | 2026-09-01 |
 | Microduck 机器人与强化学习 | [microduck](https://github.com/pollen-robotics/microduck) · [microduck_rl](https://github.com/pollen-robotics/microduck_rl) | 从 MuJoCo/PPO/Sim2Real 到 50 Hz 实机运行时的完整链路，以及能力边界和研究价值 | `studying` | [研究笔记](research/pollen-robotics-microduck/README.md) | [官方模拟器](https://huggingface.co/spaces/pollen-robotics/microduck-simulator) | 2026-09-01 |
 
 > 新条目会按 `owner-repository` 命名并加入此表。研究状态统一使用 `planned`、`studying`、`validated` 或 `archived`。
