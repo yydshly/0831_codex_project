@@ -8,8 +8,11 @@
 
 | 研究项目 | 上游仓库 | 研究重点 | 状态 | 研究笔记 | Demo | 最近更新 |
 | --- | --- | --- | --- | --- | --- | --- |
+| Microduck 机器人与强化学习 | [microduck](https://github.com/pollen-robotics/microduck) · [microduck_rl](https://github.com/pollen-robotics/microduck_rl) | 从 MuJoCo/PPO/Sim2Real 到 50 Hz 实机运行时的完整链路，以及能力边界和研究价值 | `studying` | [研究笔记](research/pollen-robotics-microduck/README.md) | [官方模拟器](https://huggingface.co/spaces/pollen-robotics/microduck-simulator) | 2026-09-01 |
 
 > 新条目会按 `owner-repository` 命名并加入此表。研究状态统一使用 `planned`、`studying`、`validated` 或 `archived`。
+
+Microduck 条目将两个互补仓库作为一个系统研究：`microduck_rl` 负责仿真、PPO 训练、执行器建模与 ONNX 导出，`microduck` 负责实机推理、安全约束、通信和 OTA。它是机器人强化学习与产品化衔接的优秀案例，但不是通用机器人基础库，也不是已经完成的自主智能体方案。
 
 ## Web Demo 索引
 
