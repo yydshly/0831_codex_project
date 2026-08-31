@@ -17,9 +17,9 @@ apps/<app-slug>/
 - 应用不得包含密钥；GitHub Pages 中的所有静态资源均视为公开内容。
 - 应用 README 必须链接相关的 `research/<owner>-<repository>/` 条目。
 
-## GitHub Pages 规划
+## GitHub Pages 部署
 
-本仓库只使用一个 GitHub Pages 站点。未来由一个 GitHub Actions 工作流构建所有需要发布的 Demo，并汇总为单个 Pages artifact：
+本仓库只使用一个 GitHub Pages 站点。`.github/workflows/pages.yml` 负责构建需要发布的 Demo，并汇总为单个 Pages artifact：
 
 ```text
 pages-dist/
@@ -38,4 +38,10 @@ https://yydshly.github.io/0831_codex_project/demos/<app-slug>/
 
 因此每个应用都要支持 `/0831_codex_project/demos/<app-slug>/` 资源基路径，或只使用可靠的相对路径。单页应用优先使用 hash 路由；GitHub Pages 不提供普通服务器式的 history fallback。
 
-第一个 Demo 准备部署时再加入 `site/` 入口与 `.github/workflows/pages.yml`，届时根据实际技术栈确定构建矩阵，避免初始化阶段引入无用依赖。
+当前在线 Demo：
+
+| Demo | 在线地址 | 构建来源 |
+| --- | --- | --- |
+| early.tools 中文能力地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | `apps/early-tools-capability-lab` |
+
+后续新增 Demo 时，在工作流的构建与 artifact 汇总步骤中增加对应子路径，并同步更新根 README 和本索引。

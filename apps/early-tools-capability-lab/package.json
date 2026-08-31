@@ -1,0 +1,17 @@
+{
+  "name": "early-tools-capability-lab",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "validate:browser": "node scripts/validate.mjs"
+  },
+  "devDependencies": {
+    "axe-core": "^4.13.0",
+    "playwright-core": "^1.62.1",
+    "vite": "^7.1.3"
+  }
+}
