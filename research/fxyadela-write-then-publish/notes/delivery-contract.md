@@ -54,7 +54,7 @@
 | 仓库索引 | 研究和 Demo 可发现 | 根 README、研究索引、应用索引 | 文件检查 | Stage 9 | pass | 根索引与两个子项目入口已链接 |
 | 总结理解 | “一次输入、统一处理、按平台编译、分别交付”及参考价值 | 首屏摘要与独立总结区 | 浏览器截图＋DOM 检查 | Stage 3 | pass | 最终理解、AI 角色、参考价值与不可照搬边界已集中呈现 |
 | 真实演示关联 | 上游原生卡片、长文工作区与实际 PNG 导出 | 真实演示证据区、静态资源 | 浏览器截图＋文件尺寸/哈希＋链接检查 | Stage 3 | pass | 四项真实证据、输入夹具与固定提交已建立公开关联 |
-| 公开部署 | GitHub Pages 子路径可构建并访问 | Pages workflow、artifact、线上 URL | 本地构建＋工作流检查＋HTTP/浏览器验证 | Stage 9 | continue | Pages 工作流、生产构建与本地同构 artifact 已通过；待推送后复核线上 URL |
+| 公开部署 | GitHub Pages 子路径可构建并访问 | Pages workflow、artifact、线上 URL | 本地构建＋工作流检查＋HTTP/浏览器验证 | Stage 9 | pass | Pages run 33462346180 成功；线上页面和四张真实证据图均返回 200 |
 | Pages 索引 | 公开站点、根 README、apps README 均能发现本项目 | 站点首页与仓库索引 | 文件检查＋线上点击 | Stage 9 | pass | Pages 首页、根 README、apps README 和研究 README 均已关联 |
 | 修订后响应式与主题 | 新增理解和真实证据区不破坏既有阅读路径 | 1440×1000、768×900、390×844；light/dark | 浏览器截图＋尺寸与 Axe | Stage 7 | pass | 三视口无根级溢出，图片加载成功，light/dark Axe 0 violations |
-| GitHub 提交 | 只提交 WTP 研究、应用、Pages 工作流与索引 | staged diff、commit、origin/main | Git 状态＋提交输出＋远端检查 | Stage 9 | continue | 精确暂存相关文件并推送 |
+| GitHub 提交 | 只提交 WTP 研究、应用、Pages 工作流与索引 | staged diff、commit、origin/main | Git 状态＋提交输出＋远端检查 | Stage 9 | pass | 主提交 40aff36 已推送 origin/main；其他未跟踪项目未进入提交 |

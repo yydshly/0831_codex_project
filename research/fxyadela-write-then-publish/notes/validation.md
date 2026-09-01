@@ -108,12 +108,14 @@ Revision 2 的 Axe 结果为：1440px light 0 violations、1440px dark 0 violati
 | --- | --- | --- |
 | 最终理解 | 页面集中呈现“一次输入、统一处理、按平台编译、分别交付”，并分别说明本质、AI 角色、参考价值与不可照搬边界 | pass |
 | 真实证据加载 | 两张 `1440 × 1000` 工作区截图、`1728 × 2304` 卡片 PNG 与 `482 × 1479` 长文 PNG 均按原始尺寸加载 | pass |
-| Pages 子路径 | 本地 artifact 的 `/demos/write-then-publish-lab/` 返回完整页面；站点首页点击新卡片可进入该路径 | pass |
+| Pages 子路径 | 本地 artifact 与线上 `/demos/write-then-publish-lab/` 均返回完整页面；线上站点首页包含第五张卡片并指向该路径 | pass |
 | 三视口布局 | 1440、768、390 下 `scrollWidth === clientWidth`；真实证据区分别为双列或单列响应式布局 | pass |
 | 明暗主题 | 真实证据区在 light / dark 中层级完整，主题控件实际切换成功 | pass |
 | 无障碍 | Revision 3 light 与 dark Axe 均为 0 violations；ARIA incomplete 已修复，剩余仅为伪元素/装饰符号的 contrast incomplete | pass |
 | reduced motion | 浏览器模拟命中，`scroll-behavior` 为 `auto`，新增图片过渡降为 `0.01ms` | pass |
 | 运行时依赖与错误 | 外部 Resource Timing 列表为 `[]`，页面错误为空 | pass |
+
+GitHub Actions [Pages run 33462346180](https://github.com/yydshly/0831_codex_project/actions/runs/33462346180) 的 build 与 deploy 均成功。公开页 <https://yydshly.github.io/0831_codex_project/demos/write-then-publish-lab/> 已在真实浏览器中验证；四项 PNG 资源均返回 HTTP 200，页面根级无横向溢出。
 
 ## 已知边界
 
