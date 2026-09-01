@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OpenBrowser 原理与后期价值地图：解释真实 Chromium、Profile 隔离、CDP、RPA、任务状态和 MCP 控制面如何组成可编排浏览器运行平台。"
+    />
+    <meta name="theme-color" content="#f2f0e8" />
+    <title>OpenBrowser 原理与后期价值地图</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23101a1e'/%3E%3Cpath d='M16 19h32v6H16zm0 10h24v6H16zm0 10h32v6H16z' fill='%23c9ff4b'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <div id="app"></div>
+    <noscript>
+      <main class="noscript-shell">
+        <p>OPENBROWSER ARCHITECTURE LAB</p>
+        <h1>它不在重新实现浏览器内核。</h1>
+        <p>
+          OpenBrowser 在真实 Chromium 上增加独立 Profile、代理与环境配置、CDP 控制、RPA 任务和 MCP/API 控制面。
+          最值得复用的是浏览器运行平台的工程方法，而不是“保证绕过识别”的产品叙事。
+        </p>
+        <h2>后期什么时候值得继续研究？</h2>
+        <p>当我们需要多租户 QA、浏览器 RPA、AI Agent 执行器或基于 Chromium 的定制桌面产品时。</p>
+        <p>
+          <a href="https://github.com/lyu0805/OpenBrowser">访问上游仓库</a>
+          ·
+          <a href="https://github.com/yydshly/0831_codex_project/tree/main/research/lyu0805-openbrowser">阅读完整研究</a>
+        </p>
+      </main>
+    </noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

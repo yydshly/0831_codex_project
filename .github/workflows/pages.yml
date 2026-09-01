@@ -7,6 +7,7 @@ on:
       - '.github/workflows/pages.yml'
       - 'apps/botvod-capability-lab/**'
       - 'apps/early-tools-capability-lab/**'
+      - 'apps/openbrowser-architecture-lab/**'
       - 'site/**'
   workflow_dispatch:
 
@@ -34,6 +35,7 @@ jobs:
           cache-dependency-path: |
             apps/botvod-capability-lab/package-lock.json
             apps/early-tools-capability-lab/package-lock.json
+            apps/openbrowser-architecture-lab/package-lock.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v6
@@ -54,13 +56,23 @@ jobs:
         working-directory: apps/botvod-capability-lab
         run: npm run build
 
+      - name: Install OpenBrowser Architecture Lab dependencies
+        working-directory: apps/openbrowser-architecture-lab
+        run: npm ci
+
+      - name: Build OpenBrowser Architecture Lab
+        working-directory: apps/openbrowser-architecture-lab
+        run: npm run build
+
       - name: Assemble Pages artifact
         run: |
           mkdir -p pages-dist/demos/botvod-capability-lab
           mkdir -p pages-dist/demos/early-tools-capability-lab
+          mkdir -p pages-dist/demos/openbrowser-architecture-lab
           cp site/index.html pages-dist/index.html
           cp -R apps/botvod-capability-lab/dist/. pages-dist/demos/botvod-capability-lab/
           cp -R apps/early-tools-capability-lab/dist/. pages-dist/demos/early-tools-capability-lab/
+          cp -R apps/openbrowser-architecture-lab/dist/. pages-dist/demos/openbrowser-architecture-lab/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
