@@ -42,6 +42,7 @@ https://yydshly.github.io/0831_codex_project/demos/<app-slug>/
 
 | Demo | 在线地址 | 构建来源 |
 | --- | --- | --- |
+| BotVod 媒体系统能力地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/botvod-capability-lab/) | `apps/botvod-capability-lab` |
 | early.tools 中文能力地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | `apps/early-tools-capability-lab` |
 
 后续新增 Demo 时，在工作流的构建与 artifact 汇总步骤中增加对应子路径，并同步更新根 README 和本索引。

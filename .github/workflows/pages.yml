@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/pages.yml'
+      - 'apps/botvod-capability-lab/**'
       - 'apps/early-tools-capability-lab/**'
       - 'site/**'
   workflow_dispatch:
@@ -30,7 +31,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: apps/early-tools-capability-lab/package-lock.json
+          cache-dependency-path: |
+            apps/botvod-capability-lab/package-lock.json
+            apps/early-tools-capability-lab/package-lock.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v6
@@ -43,10 +46,20 @@ jobs:
         working-directory: apps/early-tools-capability-lab
         run: npm run build
 
+      - name: Install BotVod Capability Lab dependencies
+        working-directory: apps/botvod-capability-lab
+        run: npm ci
+
+      - name: Build BotVod Capability Lab
+        working-directory: apps/botvod-capability-lab
+        run: npm run build
+
       - name: Assemble Pages artifact
         run: |
+          mkdir -p pages-dist/demos/botvod-capability-lab
           mkdir -p pages-dist/demos/early-tools-capability-lab
           cp site/index.html pages-dist/index.html
+          cp -R apps/botvod-capability-lab/dist/. pages-dist/demos/botvod-capability-lab/
           cp -R apps/early-tools-capability-lab/dist/. pages-dist/demos/early-tools-capability-lab/
 
       - name: Upload Pages artifact

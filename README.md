@@ -4,12 +4,15 @@
 
 本仓库聚焦于项目的设计思路、架构取舍、关键实现和可复用经验。每个研究条目都会记录上游来源、研究基线与许可证；必要时可附带最小实验或静态 Web Demo，但不会默认镜像完整的第三方仓库。
 
-当前在线案例：[early.tools 中文能力地图](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/)——从五类信息来源及其处理链出发，解释早期产品情报库如何形成、如何使用，以及为什么“来源、验证时间、置信度”比单纯扩大收录量更重要。
+当前重点案例：[BotVod 媒体系统能力地图](https://yydshly.github.io/0831_codex_project/demos/botvod-capability-lab/)——一句话理解：**BotVod 是把已知 URL 变成媒体资产的上游摄取样本，MediaCMS 是管理并分发已入库媒体的下游资产样本；我们应以可插拔 Source Adapter 与统一 Media Manifest 把两层连接起来。**
+
+其他在线案例：[early.tools 中文能力地图](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/)——从五类信息来源及其处理链出发，解释早期产品情报库如何形成、如何使用，以及为什么“来源、验证时间、置信度”比单纯扩大收录量更重要。
 
 ## 研究索引
 
 | 研究项目 | 上游仓库 | 研究重点 | 状态 | 研究笔记 | Demo | 最近更新 |
 | --- | --- | --- | --- | --- | --- | --- |
+| BotVod + MediaCMS 对照研究 | [BotVod](https://botvod.com/) · [MediaCMS](https://github.com/mediacms-io/mediacms) | 上游 URL 媒体摄取与下游资产管理分发如何通过 Source Adapter 和统一 Manifest 连接 | `validated` | [研究笔记](research/botvod-com/README.md) | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/botvod-capability-lab/) | 2026-09-01 |
 | early.tools | [在线网页](https://www.early.tools/) | 将分散的早期产品线索策展为可筛选、可持续跟踪的产品情报，帮助用户更早发现机会，并帮助创始人完成验证与分发 | `validated` | [研究笔记](research/early-tools/README.md) | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | 2026-09-01 |
 | Microduck 机器人与强化学习 | [microduck](https://github.com/pollen-robotics/microduck) · [microduck_rl](https://github.com/pollen-robotics/microduck_rl) | 从 MuJoCo/PPO/Sim2Real 到 50 Hz 实机运行时的完整链路，以及能力边界和研究价值 | `studying` | [研究笔记](research/pollen-robotics-microduck/README.md) | [官方模拟器](https://huggingface.co/spaces/pollen-robotics/microduck-simulator) | 2026-09-01 |
 
@@ -21,6 +24,7 @@ Microduck 条目将两个互补仓库作为一个系统研究：`microduck_rl` �
 
 | Demo | 关联研究 | 简介 | 在线地址 | 源码 | 状态 |
 | --- | --- | --- | --- | --- | --- |
+| BotVod Capability Lab | [BotVod + MediaCMS 对照研究](research/botvod-com/README.md) | 演示 URL 找源与缓存/队列，并用系统全景解释 MediaCMS 的存储、处理、管理、分发和展示职责 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/botvod-capability-lab/) | [源码](apps/botvod-capability-lab/) | `validated` |
 | early.tools 中文能力地图 | [early.tools](research/early-tools/README.md) | 从五类信息来源和来源处理链出发，按角色与七类能力库解释早期产品发现、策展飞轮、使用边界和扩展路线 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | [源码](apps/early-tools-capability-lab/) | `validated` |
 
 Web Demo 将汇总到同一个 GitHub Pages 站点，并通过独立子路径访问。具体约定见 [apps/README.md](apps/README.md)。
