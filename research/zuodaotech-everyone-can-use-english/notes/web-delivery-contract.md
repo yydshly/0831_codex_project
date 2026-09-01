@@ -58,7 +58,7 @@ Coverage record: 见下表
 | Reduced motion | 关闭非必要动画 | reduced-motion | 浏览器模拟返回 `matches = true`，信息完整 | Stage 7/8 | `pass` | 无 |
 | 工程质量 | 类型检查、生产构建、无控制台错误 | CLI/runtime | `npm run check`、`npm run build`、浏览器 errors 均通过 | Stage 9 | `pass` | 无 |
 | 文档 | README、契约、验证与交接完整 | 文件 | 应用 README、验证记录和交接文档完成 | Stage 9 | `pass` | 无 |
-| 远端发布 | 统一 GitHub Pages 子路径 | workflow / artifact / online | Actions 成功、HTML/JS/CSS 200、浏览器复验 | Stage 10 | `continue` | 推送后验证并补记录 |
+| 远端发布 | 统一 GitHub Pages 子路径 | workflow / artifact / online | Run 33459561107 成功；HTML/JS/CSS 200；桌面与手机浏览器复验通过 | Stage 10 | `pass` | 无 |
 
 ## 支持边界
 

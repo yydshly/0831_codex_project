@@ -181,3 +181,4 @@ Renderer 不直接操作 Node 文件系统，而是通过 [`preload.ts`](https:/
 
 - `2026-09-01`：创建研究子项目，固定上游提交，完成能力、架构、语音流水线、AI/云边界和验证计划的第一轮静态研究。
 - `2026-09-01`：完成技术能力研究网页，覆盖能力范围、实现原理、场景、扩展和参考价值，并通过三视口、双主题、键盘与 reduced-motion 验证。
+- `2026-09-01`：以提交 [`e4cb4d8`](https://github.com/yydshly/0831_codex_project/commit/e4cb4d866bef045c82ba615c20e03bc068491e05) 接入仓库 Pages 工作流与三级索引；[`Run 33459561107`](https://github.com/yydshly/0831_codex_project/actions/runs/33459561107) 发布成功，线上 HTML、JS、CSS、桌面与手机交互复验通过。

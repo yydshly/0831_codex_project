@@ -33,6 +33,8 @@ npm run build
 
 应用使用 Vite `base: "./"` 和锚点导航，适配 GitHub Pages 嵌套子路径，不需要 history fallback、CNAME 或服务端配置。
 
+发布已在提交 [`e4cb4d8`](https://github.com/yydshly/0831_codex_project/commit/e4cb4d866bef045c82ba615c20e03bc068491e05) 后通过 [`Run 33459561107`](https://github.com/yydshly/0831_codex_project/actions/runs/33459561107) 完成。build 与 deploy job 均为 `success`；线上 HTML、JavaScript、CSS 和聚合首页均返回 HTTP 200，桌面与手机浏览器复验通过。完整数据和截图索引见[技术研究网页验证](web-validation.md)。
+
 ## 页面内容结构
 
 1. 主要摘要：把任意内容加工成英语训练材料的工作台，而不是完整的英语教学体系；
