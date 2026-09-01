@@ -22,6 +22,7 @@
 | Microduck 机器人与强化学习 | [microduck](https://github.com/pollen-robotics/microduck) · [microduck_rl](https://github.com/pollen-robotics/microduck_rl) | 从 MuJoCo/PPO/Sim2Real 到 50 Hz 实机运行时的完整链路，以及能力边界和研究价值 | `studying` | [研究笔记](research/pollen-robotics-microduck/README.md) | [官方模拟器](https://huggingface.co/spaces/pollen-robotics/microduck-simulator) | 2026-09-01 |
 | Write Then Publish | [GitHub](https://github.com/fxyadela/write-then-publish) | Markdown 单一内容源、多形态排版、媒体处理与发布前交付 | `validated` | [研究笔记](research/fxyadela-write-then-publish/README.md) | [在线研究档案](https://yydshly.github.io/0831_codex_project/demos/write-then-publish-lab/) | 2026-09-01 |
 | OpenBrowser | [GitHub](https://github.com/lyu0805/OpenBrowser) | 真实 Chromium 之上的 Profile 隔离、CDP、RPA 状态流与 MCP 控制面 | `studying` | [研究笔记](research/lyu0805-openbrowser/README.md) | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/openbrowser-architecture-lab/) | 2026-09-01 |
+| OPC Skills | [GitHub](https://github.com/ReScienceLab/opc-skills) | 用同一方法探索多个真实候选，把外部证据、Agent 整理、个人认知和行动反馈改写成自己的创业操作系统 | `validated` | [研究笔记](research/resciencelab-opc-skills/README.md) | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/opc-skills-capability-lab/) | 2026-09-01 |
 
 > 新条目会按 `owner-repository` 命名并加入此表。研究状态统一使用 `planned`、`studying`、`validated` 或 `archived`。
 
@@ -36,6 +37,7 @@ Microduck 条目将两个互补仓库作为一个系统研究：`microduck_rl` �
 | Write Then Publish 独立研究档案 | [Write Then Publish](research/fxyadela-write-then-publish/README.md) | 总结“一次输入、统一处理、按平台编译、分别交付”，关联上游真实卡片/长文 PNG，并用教学实验解释同源双输出 | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/write-then-publish-lab/) | [源码](apps/write-then-publish-lab/) | `validated` |
 | early.tools 中文能力地图 | [early.tools](research/early-tools/README.md) | 从五类信息来源和来源处理链出发，按角色与七类能力库解释早期产品发现、策展飞轮、使用边界和扩展路线 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | [源码](apps/early-tools-capability-lab/) | `validated` |
 | OpenBrowser 原理与后期价值地图 | [OpenBrowser](research/lyu0805-openbrowser/README.md) | 区分浏览器内核与运行平台，交互拆解 Profile、CDP、RPA、MCP、隔离边界和未来研究触发条件 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/openbrowser-architecture-lab/) | [源码](apps/openbrowser-architecture-lab/) | `validated` |
+| OPC Skills 能力与方法地图 | [OPC Skills](research/resciencelab-opc-skills/README.md) | 用多项目探索循环解释十个 Skills、个人决策门，并回放“想法—探索—取证—纠偏—沉淀”的真实研究轨迹及其原始证据 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/opc-skills-capability-lab/) | [源码](apps/opc-skills-capability-lab/) | `validated` |
 
 Web Demo 将汇总到同一个 GitHub Pages 站点，并通过独立子路径访问。具体约定见 [apps/README.md](apps/README.md)。
 

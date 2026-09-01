@@ -1,0 +1,40 @@
+{
+  "demo": "OPC Skills dogfooding: demand → domain → MVP → SEO → memory",
+  "generatedAt": "2026-09-01T02:22:50.547Z",
+  "runtime": {
+    "node": "v22.15.0",
+    "python": "website/demo/.venv/Scripts/python.exe"
+  },
+  "files": [
+    {
+      "name": "demand-signals.json",
+      "bytes": 2296,
+      "sha256": "1147d1c6cc111d21fb8acb47bf5d64eba5c4286620502825a38eef532bf02a00"
+    },
+    {
+      "name": "domain-check.json",
+      "bytes": 835,
+      "sha256": "b338a1f5c3536e3e298061847fa0a23e3899cf992e3b0da50b1d6eaa4c5c8646"
+    },
+    {
+      "name": "opportunity-landing.html",
+      "bytes": 3658,
+      "sha256": "1ad262fc0a88bff9917f0f2993cfe0a5fe8222e4d030e30508cdbdc1033d13bd"
+    },
+    {
+      "name": "opportunity-brief.md",
+      "bytes": 1435,
+      "sha256": "7f2276eea49a46f80e5c83d5da5f23fd414dd5ba0861a2caeccc79a7a3ab9656"
+    },
+    {
+      "name": "mvp-seo-audit.txt",
+      "bytes": 630,
+      "sha256": "5c67c6cd5ea89a0f17dcd4d0210e2954c322ec0e001630745dd9e0a03e7d0dcc"
+    },
+    {
+      "name": "archive-hook.json",
+      "bytes": 561,
+      "sha256": "87109fa51741b4806b46f713c96c9c45c16bfdd96eafb6aea5d81c470ed4e4db"
+    }
+  ]
+}

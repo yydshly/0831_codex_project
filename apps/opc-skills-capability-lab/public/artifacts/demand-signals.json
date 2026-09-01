@@ -1,0 +1,62 @@
+{
+  "scenario": "Validate whether reusable AI-agent skills solve visible problems for one-person builders.",
+  "checkedAt": "2026-09-01T02:20:58.037Z",
+  "requesthunt": {
+    "status": "auth-required-not-executed",
+    "note": "The repository documents REQUESTHUNT_API_KEY as required, so this run does not claim RequestHunt CLI execution."
+  },
+  "redditProbe": {
+    "status": "failed",
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "error: HTTP 403"
+  },
+  "githubFallback": {
+    "status": "succeeded",
+    "api": "https://api.github.com/search/issues?q=%22AI+agent+skills%22+in%3Atitle%2Cbody+type%3Aissue&per_page=5",
+    "query": "\"AI agent skills\" in:title,body type:issue",
+    "totalCount": 15331,
+    "items": [
+      {
+        "title": "Tool Submission: AI Agent Skills",
+        "url": "https://github.com/JrSaint/finderslist/issues/544",
+        "repository": "JrSaint/finderslist",
+        "comments": 0,
+        "createdAt": "2026-08-31T10:55:06Z",
+        "updatedAt": "2026-08-31T10:55:06Z"
+      },
+      {
+        "title": "Create distributed AI agents / skills",
+        "url": "https://github.com/roadlittledawn/docs-design-system/issues/168",
+        "repository": "roadlittledawn/docs-design-system",
+        "comments": 0,
+        "createdAt": "2026-08-26T22:21:03Z",
+        "updatedAt": "2026-08-26T22:21:03Z"
+      },
+      {
+        "title": "[cli] New era - AI agents, skills",
+        "url": "https://github.com/AndrewMaksimchuk/note/issues/71",
+        "repository": "AndrewMaksimchuk/note",
+        "comments": 2,
+        "createdAt": "2026-08-26T05:18:11Z",
+        "updatedAt": "2026-08-26T07:44:59Z"
+      },
+      {
+        "title": "AI agent skills for showyourwork projects",
+        "url": "https://github.com/showyourwork/showyourwork/issues/740",
+        "repository": "showyourwork/showyourwork",
+        "comments": 0,
+        "createdAt": "2026-08-15T15:13:53Z",
+        "updatedAt": "2026-08-15T15:13:53Z"
+      },
+      {
+        "title": "AI agent skills/playbooks for RO-Crate",
+        "url": "https://github.com/eScienceLab/RO-Crate_Issues/issues/307",
+        "repository": "eScienceLab/RO-Crate_Issues",
+        "comments": 0,
+        "createdAt": "2026-08-13T16:23:29Z",
+        "updatedAt": "2026-08-13T16:23:29Z"
+      }
+    ]
+  }
+}

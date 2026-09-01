@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-09-01T02:21:41.723Z",
+  "source": "RDAP.org live responses",
+  "warning": "No RDAP record is not a purchase guarantee; confirm with a registrar before deciding.",
+  "checks": [
+    {
+      "domain": "opcskills.com",
+      "rationale": "Direct category name",
+      "endpoint": "https://rdap.org/domain/opcskills.com",
+      "httpStatus": 200,
+      "status": "registered"
+    },
+    {
+      "domain": "soloskills.dev",
+      "rationale": "Solo-builder positioning",
+      "endpoint": "https://rdap.org/domain/soloskills.dev",
+      "httpStatus": 404,
+      "status": "no-rdap-record"
+    },
+    {
+      "domain": "onepersonstack.com",
+      "rationale": "One-person-company stack",
+      "endpoint": "https://rdap.org/domain/onepersonstack.com",
+      "httpStatus": 200,
+      "status": "registered"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "hookSpecificOutput": {
+    "hookEventName": "SessionStart",
+    "additionalContext": "## Archived Project Knowledge (.archive/MEMORY.md)\n\n# OPC Skills 自举验证记忆\n\n- GitHub 公共 Issues 提供 5 条相关需求信号。\n- RequestHunt 本次未执行：需要 REQUESTHUNT_API_KEY。\n- Reddit 实探状态：failed，退出码 1。\n- 候选入口：soloskills.dev（no-rdap-record，仍需注册商复核）。\n- 已生成并审计 opportunity-landing.html。\n- 当前证据不等于付费意愿；下一步是 5 次用户访谈。\n"
+  }
+}

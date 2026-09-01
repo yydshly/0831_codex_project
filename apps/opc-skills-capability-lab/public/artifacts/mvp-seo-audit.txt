@@ -1,0 +1,25 @@
+=== SEO Audit: http://127.0.0.1:8788/demo-output/opportunity-landing.html ===
+
+## Meta Tags
+title: Solo Skills — 一人创业者的可复用 AI Agent 工作流
+title_length: 36 chars
+description: 基于真实公开需求信号构建的 OPC Skills 验证页：从需求发现、品牌入口到增长与归档。
+description_length: 46 chars
+og_tags: yes
+h1: 一个人，也能拥有一套可复用的创业工作流。
+
+## Schema Markup
+json_ld_blocks: 1
+
+## Performance
+load_time: 0.01s
+status: good
+
+## robots.txt
+exists: yes
+ai_bots_mentioned: none
+
+## Sitemap
+sitemap_xml: yes
+
+=== Audit Complete ===

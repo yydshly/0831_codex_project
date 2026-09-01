@@ -10,6 +10,7 @@ on:
       - 'apps/openbrowser-architecture-lab/**'
       - 'apps/everyone-can-use-english-capability-lab/**'
       - 'apps/write-then-publish-lab/**'
+      - 'apps/opc-skills-capability-lab/**'
       - 'site/**'
   workflow_dispatch:
 
@@ -40,6 +41,7 @@ jobs:
             apps/openbrowser-architecture-lab/package-lock.json
             apps/everyone-can-use-english-capability-lab/package-lock.json
             apps/write-then-publish-lab/package-lock.json
+            apps/opc-skills-capability-lab/package-lock.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v6
@@ -84,6 +86,14 @@ jobs:
         working-directory: apps/write-then-publish-lab
         run: npm run build
 
+      - name: Install OPC Skills Capability Lab dependencies
+        working-directory: apps/opc-skills-capability-lab
+        run: npm ci
+
+      - name: Build OPC Skills Capability Lab
+        working-directory: apps/opc-skills-capability-lab
+        run: npm run build
+
       - name: Assemble Pages artifact
         run: |
           mkdir -p pages-dist/demos/botvod-capability-lab
@@ -91,12 +101,14 @@ jobs:
           mkdir -p pages-dist/demos/openbrowser-architecture-lab
           mkdir -p pages-dist/demos/everyone-can-use-english-capability-lab
           mkdir -p pages-dist/demos/write-then-publish-lab
+          mkdir -p pages-dist/demos/opc-skills-capability-lab
           cp site/index.html pages-dist/index.html
           cp -R apps/botvod-capability-lab/dist/. pages-dist/demos/botvod-capability-lab/
           cp -R apps/early-tools-capability-lab/dist/. pages-dist/demos/early-tools-capability-lab/
           cp -R apps/openbrowser-architecture-lab/dist/. pages-dist/demos/openbrowser-architecture-lab/
           cp -R apps/everyone-can-use-english-capability-lab/dist/. pages-dist/demos/everyone-can-use-english-capability-lab/
           cp -R apps/write-then-publish-lab/dist/. pages-dist/demos/write-then-publish-lab/
+          cp -R apps/opc-skills-capability-lab/dist/. pages-dist/demos/opc-skills-capability-lab/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5

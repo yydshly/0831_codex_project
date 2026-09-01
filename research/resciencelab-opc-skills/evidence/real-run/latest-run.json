@@ -1,0 +1,189 @@
+{
+  "mode": "verified-replay",
+  "complete": true,
+  "reached": 4,
+  "verifiedAt": "2026-09-01T02:20:58.037Z",
+  "source": "Exported from website/demo/output/latest after a project-local five-step run.",
+  "localReproduction": "cd website; npm install; create demo/.venv; npm run demo",
+  "results": [
+    {
+      "step": 0,
+      "title": "获取真实需求信号并暴露数据边界",
+      "skill": "requesthunt 方法 + reddit 实探",
+      "command": ".\\demo\\.venv\\Scripts\\python.exe ..\\skills\\reddit\\scripts\\search_posts.py \"AI agent skills\" ...；失败后调用 GitHub 公共 Issues API",
+      "exitCode": 0,
+      "stdout": "RequestHunt: 未执行（需要 REQUESTHUNT_API_KEY）\nReddit probe: HTTP 403\nGitHub Issues API: HTTP 200, 5 条公开问题\n1. Tool Submission: AI Agent Skills\n   https://github.com/JrSaint/finderslist/issues/544\n2. Create distributed AI agents / skills\n   https://github.com/roadlittledawn/docs-design-system/issues/168\n3. [cli] New era - AI agents, skills\n   https://github.com/AndrewMaksimchuk/note/issues/71\n4. AI agent skills for showyourwork projects\n   https://github.com/showyourwork/showyourwork/issues/740\n5. AI agent skills/playbooks for RO-Crate\n   https://github.com/eScienceLab/RO-Crate_Issues/issues/307",
+      "stderr": "error: HTTP 403",
+      "summary": "这一步没有伪装成功：RequestHunt 因缺少项目凭证未执行，Reddit 仓库脚本记录了真实响应；随后使用 RequestHunt 文档覆盖的 GitHub 渠道，从公共 Issues API 取得可点击的真实问题。",
+      "metrics": [
+        {
+          "label": "真实 Issues",
+          "value": "5 条"
+        },
+        {
+          "label": "Reddit",
+          "value": "HTTP 403"
+        },
+        {
+          "label": "RequestHunt",
+          "value": "需凭证"
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "需求证据 demand-signals.json",
+          "type": "file",
+          "url": "/demo-output/demand-signals.json",
+          "bytes": 2296,
+          "sha256": "1147d1c6cc111d21fb8acb47bf5d64eba5c4286620502825a38eef532bf02a00"
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "title": "实时验证品牌入口候选",
+      "skill": "domain-hunter",
+      "command": "GET https://rdap.org/domain/{opcskills.com|soloskills.dev|onepersonstack.com}",
+      "exitCode": 0,
+      "stdout": "opcskills.com\tHTTP 200\tregistered\nsoloskills.dev\tHTTP 404\tno-rdap-record\nonepersonstack.com\tHTTP 200\tregistered",
+      "stderr": "",
+      "summary": "domain-hunter 的命名与验证方法被落到真实 RDAP 请求上。页面只报告“已注册 / 未发现 RDAP 记录 / 不确定”，不会把 404 冒充为保证可购买。",
+      "metrics": [
+        {
+          "label": "已检查",
+          "value": "3 个"
+        },
+        {
+          "label": "已注册",
+          "value": "2 个"
+        },
+        {
+          "label": "未发现记录",
+          "value": "1 个"
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "域名证据 domain-check.json",
+          "type": "file",
+          "url": "/demo-output/domain-check.json",
+          "bytes": 835,
+          "sha256": "b338a1f5c3536e3e298061847fa0a23e3899cf992e3b0da50b1d6eaa4c5c8646"
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "用真实证据生成可验证 MVP",
+      "skill": "OPC Agent 编排",
+      "command": "node website/demo/server.js → demand-signals.json + domain-check.json → opportunity-landing.html",
+      "exitCode": 0,
+      "stdout": "Read 5 GitHub issue signals\nSelected candidate: soloskills.dev (no-rdap-record)\nWrote opportunity-landing.html\nWrote opportunity-brief.md",
+      "stderr": "",
+      "summary": "Agent 将前两步的真实 JSON 证据组合成 MVP 落地页和机会简报。这展示的是多个 Skills 的编排层，而不是把服务器代码伪称为仓库内某一个 Skill。",
+      "metrics": [
+        {
+          "label": "引用信号",
+          "value": "5 条"
+        },
+        {
+          "label": "候选入口",
+          "value": "soloskills.dev"
+        },
+        {
+          "label": "产物",
+          "value": "2 files"
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "打开真实 MVP 落地页",
+          "type": "html",
+          "url": "/demo-output/opportunity-landing.html",
+          "bytes": 3658,
+          "sha256": "1ad262fc0a88bff9917f0f2993cfe0a5fe8222e4d030e30508cdbdc1033d13bd"
+        },
+        {
+          "label": "机会验证简报",
+          "type": "file",
+          "url": "/demo-output/opportunity-brief.md",
+          "bytes": 1435,
+          "sha256": "7f2276eea49a46f80e5c83d5da5f23fd414dd5ba0861a2caeccc79a7a3ab9656"
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "真实审计刚生成的 MVP 页面",
+      "skill": "seo-geo",
+      "command": ".\\demo\\.venv\\Scripts\\python.exe ..\\skills\\seo-geo\\scripts\\seo_audit.py http://127.0.0.1:8788/demo-output/opportunity-landing.html",
+      "exitCode": 0,
+      "stdout": "=== SEO Audit: http://127.0.0.1:8788/demo-output/opportunity-landing.html ===\r\n\r\n## Meta Tags\r\ntitle: Solo Skills — 一人创业者的可复用 AI Agent 工作流\r\ntitle_length: 36 chars\r\ndescription: 基于真实公开需求信号构建的 OPC Skills 验证页：从需求发现、品牌入口到增长与归档。\r\ndescription_length: 46 chars\r\nog_tags: yes\r\nh1: 一个人，也能拥有一套可复用的创业工作流。\r\n\r\n## Schema Markup\r\njson_ld_blocks: 1\r\n\r\n## Performance\r\nload_time: 0.01s\r\nstatus: good\r\n\r\n## robots.txt\r\nexists: yes\r\nai_bots_mentioned: none\r\n\r\n## Sitemap\r\nsitemap_xml: yes\r\n\r\n=== Audit Complete ===",
+      "stderr": "",
+      "summary": "仓库的 seo_audit.py 已真实请求第三步刚生成的 MVP 页面，检查元信息、结构化数据、robots.txt、sitemap.xml 与响应性能。",
+      "metrics": [
+        {
+          "label": "Title 长度",
+          "value": "36 chars"
+        },
+        {
+          "label": "页面加载",
+          "value": "0.01s"
+        },
+        {
+          "label": "JSON-LD",
+          "value": "1 block"
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "MVP SEO 审计 stdout",
+          "type": "file",
+          "url": "/demo-output/mvp-seo-audit.txt",
+          "bytes": 630,
+          "sha256": "5c67c6cd5ea89a0f17dcd4d0210e2954c322ec0e001630745dd9e0a03e7d0dcc"
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "真实归档验证结论与证据清单",
+      "skill": "archive",
+      "command": "CLAUDE_PROJECT_DIR=<demo-output> python skills/archive/hooks/load-memory.py；随后生成 SHA-256 manifest",
+      "exitCode": 0,
+      "stdout": "{\"hookSpecificOutput\": {\"hookEventName\": \"SessionStart\", \"additionalContext\": \"## Archived Project Knowledge (.archive/MEMORY.md)\\n\\n# OPC Skills \\u81ea\\u4e3e\\u9a8c\\u8bc1\\u8bb0\\u5fc6\\n\\n- GitHub \\u516c\\u5171 Issues \\u63d0\\u4f9b 5 \\u6761\\u76f8\\u5173\\u9700\\u6c42\\u4fe1\\u53f7\\u3002\\n- RequestHunt \\u672c\\u6b21\\u672a\\u6267\\u884c\\uff1a\\u9700\\u8981 REQUESTHUNT_API_KEY\\u3002\\n- Reddit \\u5b9e\\u63a2\\u72b6\\u6001\\uff1afailed\\uff0c\\u9000\\u51fa\\u7801 1\\u3002\\n- \\u5019\\u9009\\u5165\\u53e3\\uff1asoloskills.dev\\uff08no-rdap-record\\uff0c\\u4ecd\\u9700\\u6ce8\\u518c\\u5546\\u590d\\u6838\\uff09\\u3002\\n- \\u5df2\\u751f\\u6210\\u5e76\\u5ba1\\u8ba1 opportunity-landing.html\\u3002\\n- \\u5f53\\u524d\\u8bc1\\u636e\\u4e0d\\u7b49\\u4e8e\\u4ed8\\u8d39\\u610f\\u613f\\uff1b\\u4e0b\\u4e00\\u6b65\\u662f 5 \\u6b21\\u7528\\u6237\\u8bbf\\u8c08\\u3002\\n\"}}\n\n{\n  \"demo\": \"OPC Skills dogfooding: demand → domain → MVP → SEO → memory\",\n  \"generatedAt\": \"2026-09-01T02:22:50.547Z\",\n  \"runtime\": {\n    \"node\": \"v22.15.0\",\n    \"python\": \"website/demo/.venv/Scripts/python.exe\"\n  },\n  \"files\": [\n    {\n      \"name\": \"demand-signals.json\",\n      \"bytes\": 2296,\n      \"sha256\": \"1147d1c6cc111d21fb8acb47bf5d64eba5c4286620502825a38eef532bf02a00\"\n    },\n    {\n      \"name\": \"domain-check.json\",\n      \"bytes\": 835,\n      \"sha256\": \"b338a1f5c3536e3e298061847fa0a23e3899cf992e3b0da50b1d6eaa4c5c8646\"\n    },\n    {\n      \"name\": \"opportunity-landing.html\",\n      \"bytes\": 3658,\n      \"sha256\": \"1ad262fc0a88bff9917f0f2993cfe0a5fe8222e4d030e30508cdbdc1033d13bd\"\n    },\n    {\n      \"name\": \"opportunity-brief.md\",\n      \"bytes\": 1435,\n      \"sha256\": \"7f2276eea49a46f80e5c83d5da5f23fd414dd5ba0861a2caeccc79a7a3ab9656\"\n    },\n    {\n      \"name\": \"mvp-seo-audit.txt\",\n      \"bytes\": 630,\n      \"sha256\": \"5c67c6cd5ea89a0f17dcd4d0210e2954c322ec0e001630745dd9e0a03e7d0dcc\"\n    },\n    {\n      \"name\": \"archive-hook.json\",\n      \"bytes\": 561,\n      \"sha256\": \"87109fa51741b4806b46f713c96c9c45c16bfdd96eafb6aea5d81c470ed4e4db\"\n    }\n  ]\n}",
+      "stderr": "",
+      "summary": "Archive Hook 已真实读取本轮 MEMORY.md；服务器随后为六份核心证据计算字节数与 SHA-256。归档保留了成功结果，也保留了凭证、403 与“尚未证明付费意愿”的边界。",
+      "metrics": [
+        {
+          "label": "产物",
+          "value": "6 files"
+        },
+        {
+          "label": "总字节",
+          "value": "9,415"
+        },
+        {
+          "label": "退出码",
+          "value": "0"
+        }
+      ],
+      "artifacts": [
+        {
+          "label": "证据清单 manifest.json",
+          "type": "file",
+          "url": "/demo-output/manifest.json",
+          "bytes": 1165,
+          "sha256": "bc237f87b9424941f99178b098537de888692fe79ead2c084203665df1a331f4"
+        },
+        {
+          "label": "Archive Hook JSON",
+          "type": "file",
+          "url": "/demo-output/archive-hook.json",
+          "bytes": 561,
+          "sha256": "87109fa51741b4806b46f713c96c9c45c16bfdd96eafb6aea5d81c470ed4e4db"
+        }
+      ]
+    }
+  ]
+}

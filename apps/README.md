@@ -47,5 +47,6 @@ https://yydshly.github.io/0831_codex_project/demos/<app-slug>/
 | OpenBrowser 原理与后期价值地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/openbrowser-architecture-lab/) | `apps/openbrowser-architecture-lab` |
 | Everyone Can Use English 技术能力图谱 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/everyone-can-use-english-capability-lab/) | `apps/everyone-can-use-english-capability-lab` |
 | Write Then Publish 独立研究档案 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/write-then-publish-lab/) | `apps/write-then-publish-lab` |
+| OPC Skills 能力与方法地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/opc-skills-capability-lab/) | `apps/opc-skills-capability-lab` |
 
 后续新增 Demo 时，在工作流的构建与 artifact 汇总步骤中增加对应子路径，并同步更新根 README 和本索引。
