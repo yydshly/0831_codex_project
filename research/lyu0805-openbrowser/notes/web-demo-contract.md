@@ -49,8 +49,8 @@
 | 跨端验收 | reduced-motion 和无 JS 摘要 | Capability fallback | 浏览器模拟与截图 | Stage 8 | `pass` | — |
 | 外部 README | 项目介绍、运行方式、源库关联 | App README | 文件与链接检查 | Stage 9 | `pass` | — |
 | 外层索引 | 根 README、apps README、站点首页 | Repository surfaces | 文件与链接检查 | Stage 9 | `pass` | — |
-| 远端部署 | GitHub Pages 子路径 | Production URL | Actions/HTTP 验证 | Stage 9 | `continue` | 修改工作流并推送 |
-| 远端提交 | 只提交 OpenBrowser 相关变更 | Git commit / origin main | commit 与远端状态 | Stage 9 | `continue` | 精确暂存、提交、推送 |
+| 远端部署 | GitHub Pages 子路径 | Production URL | Actions/HTTP 验证 | Stage 9 | `pass` | — |
+| 远端提交 | 只提交 OpenBrowser 相关变更 | Git commit / origin main | commit 与远端状态 | Stage 9 | `pass` | — |
 
 ## 非目标
 

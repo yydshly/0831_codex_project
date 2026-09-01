@@ -83,9 +83,16 @@ npm run validate:browser
 
 ## 生产验证
 
-GitHub Pages 工作流将应用构建到 `/demos/openbrowser-architecture-lab/`。生产验证在对应提交推送后检查：
+首个交付提交：[`46db9a3`](https://github.com/yydshly/0831_codex_project/commit/46db9a32b8052a87aab481b30b08cb825f7b47f7)。
 
-- Pages workflow 成功；
-- 在线 URL 返回 HTTP 200；
-- 页面标题、首屏核心定位和相对静态资源正常；
-- 上游仓库与研究记录链接存在。
+GitHub Pages 工作流 [run 33456485371](https://github.com/yydshly/0831_codex_project/actions/runs/33456485371) 已完成：
+
+- `npm ci` 与 OpenBrowser Architecture Lab build 通过；
+- Pages artifact 成功汇总到 `/demos/openbrowser-architecture-lab/`；
+- build 与 deploy 两个 job 均为 `success`；
+- 在线 URL 返回 HTTP `200`，HTML 为 `1926` bytes；
+- 真实浏览器加载后标题为“OpenBrowser 原理与后期价值地图”；
+- H1 包含“它不在造浏览器内核 / 它在把 Chromium 变成运行平台”；
+- 无 Vite error overlay，`window.__OPENBROWSER_LAB_READY__ === true`；
+- 线上 DOM 包含 5 个架构层、6 个生命周期步骤和 4 个未来场景；
+- 上游仓库、固定提交与本仓库研究记录链接正常呈现。
