@@ -10,11 +10,14 @@
 
 浏览器架构案例：[OpenBrowser 原理与后期价值地图](https://yydshly.github.io/0831_codex_project/demos/openbrowser-architecture-lab/)——明确它不是重新实现浏览器内核，而是在真实 Chromium 之上组织 Profile 隔离、CDP、RPA、Local API 与 MCP；当前保留架构认知，等 AI 浏览器执行器、企业 QA、RPA 或定制 Chromium 需求出现后再深入。
 
+英语训练架构案例：[Everyone Can Use English 技术能力图谱](https://yydshly.github.io/0831_codex_project/demos/everyone-can-use-english-capability-lab/)——核心定位：**把任意内容加工成英语训练材料的工作台，而不是完整的英语教学体系。** 它用 Timeline / Segment 中间层连接内容获取、AI 处理、跟读训练、反馈与学习资产沉淀。
+
 ## 研究索引
 
 | 研究项目 | 上游仓库 | 研究重点 | 状态 | 研究笔记 | Demo | 最近更新 |
 | --- | --- | --- | --- | --- | --- | --- |
 | BotVod + MediaCMS 对照研究 | [BotVod](https://botvod.com/) · [MediaCMS](https://github.com/mediacms-io/mediacms) | 上游 URL 媒体摄取与下游资产管理分发如何通过 Source Adapter 和统一 Manifest 连接 | `validated` | [研究笔记](research/botvod-com/README.md) | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/botvod-capability-lab/) | 2026-09-01 |
+| Everyone Can Use English / Enjoy | [GitHub](https://github.com/ZuodaoTech/everyone-can-use-english) | 把任意内容加工成英语训练材料的工作台；研究内容接入、STT、DTW 时间轴、跟读反馈、AI 节点和本地学习资产 | `studying` | [研究笔记](research/zuodaotech-everyone-can-use-english/README.md) | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/everyone-can-use-english-capability-lab/) | 2026-09-01 |
 | early.tools | [在线网页](https://www.early.tools/) | 将分散的早期产品线索策展为可筛选、可持续跟踪的产品情报，帮助用户更早发现机会，并帮助创始人完成验证与分发 | `validated` | [研究笔记](research/early-tools/README.md) | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | 2026-09-01 |
 | Microduck 机器人与强化学习 | [microduck](https://github.com/pollen-robotics/microduck) · [microduck_rl](https://github.com/pollen-robotics/microduck_rl) | 从 MuJoCo/PPO/Sim2Real 到 50 Hz 实机运行时的完整链路，以及能力边界和研究价值 | `studying` | [研究笔记](research/pollen-robotics-microduck/README.md) | [官方模拟器](https://huggingface.co/spaces/pollen-robotics/microduck-simulator) | 2026-09-01 |
 | OpenBrowser | [GitHub](https://github.com/lyu0805/OpenBrowser) | 真实 Chromium 之上的 Profile 隔离、CDP、RPA 状态流与 MCP 控制面 | `studying` | [研究笔记](research/lyu0805-openbrowser/README.md) | [在线 Demo](https://yydshly.github.io/0831_codex_project/demos/openbrowser-architecture-lab/) | 2026-09-01 |
@@ -28,6 +31,7 @@ Microduck 条目将两个互补仓库作为一个系统研究：`microduck_rl` �
 | Demo | 关联研究 | 简介 | 在线地址 | 源码 | 状态 |
 | --- | --- | --- | --- | --- | --- |
 | BotVod Capability Lab | [BotVod + MediaCMS 对照研究](research/botvod-com/README.md) | 演示 URL 找源与缓存/队列，并用系统全景解释 MediaCMS 的存储、处理、管理、分发和展示职责 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/botvod-capability-lab/) | [源码](apps/botvod-capability-lab/) | `validated` |
+| Everyone Can Use English 技术能力图谱 | [Everyone Can Use English / Enjoy](research/zuodaotech-everyone-can-use-english/README.md) | 用五阶段全景和 12 项能力解释内容如何经过 AI 与语音处理，成为可播放、跟读、录音、评测和沉淀的训练材料 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/everyone-can-use-english-capability-lab/) | [源码](apps/everyone-can-use-english-capability-lab/) | `validated` |
 | early.tools 中文能力地图 | [early.tools](research/early-tools/README.md) | 从五类信息来源和来源处理链出发，按角色与七类能力库解释早期产品发现、策展飞轮、使用边界和扩展路线 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | [源码](apps/early-tools-capability-lab/) | `validated` |
 | OpenBrowser 原理与后期价值地图 | [OpenBrowser](research/lyu0805-openbrowser/README.md) | 区分浏览器内核与运行平台，交互拆解 Profile、CDP、RPA、MCP、隔离边界和未来研究触发条件 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/openbrowser-architecture-lab/) | [源码](apps/openbrowser-architecture-lab/) | `validated` |
 

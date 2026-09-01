@@ -8,6 +8,7 @@ on:
       - 'apps/botvod-capability-lab/**'
       - 'apps/early-tools-capability-lab/**'
       - 'apps/openbrowser-architecture-lab/**'
+      - 'apps/everyone-can-use-english-capability-lab/**'
       - 'site/**'
   workflow_dispatch:
 
@@ -36,6 +37,7 @@ jobs:
             apps/botvod-capability-lab/package-lock.json
             apps/early-tools-capability-lab/package-lock.json
             apps/openbrowser-architecture-lab/package-lock.json
+            apps/everyone-can-use-english-capability-lab/package-lock.json
 
       - name: Configure Pages
         uses: actions/configure-pages@v6
@@ -64,15 +66,25 @@ jobs:
         working-directory: apps/openbrowser-architecture-lab
         run: npm run build
 
+      - name: Install Everyone Can Use English Capability Lab dependencies
+        working-directory: apps/everyone-can-use-english-capability-lab
+        run: npm ci
+
+      - name: Build Everyone Can Use English Capability Lab
+        working-directory: apps/everyone-can-use-english-capability-lab
+        run: npm run build
+
       - name: Assemble Pages artifact
         run: |
           mkdir -p pages-dist/demos/botvod-capability-lab
           mkdir -p pages-dist/demos/early-tools-capability-lab
           mkdir -p pages-dist/demos/openbrowser-architecture-lab
+          mkdir -p pages-dist/demos/everyone-can-use-english-capability-lab
           cp site/index.html pages-dist/index.html
           cp -R apps/botvod-capability-lab/dist/. pages-dist/demos/botvod-capability-lab/
           cp -R apps/early-tools-capability-lab/dist/. pages-dist/demos/early-tools-capability-lab/
           cp -R apps/openbrowser-architecture-lab/dist/. pages-dist/demos/openbrowser-architecture-lab/
+          cp -R apps/everyone-can-use-english-capability-lab/dist/. pages-dist/demos/everyone-can-use-english-capability-lab/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
