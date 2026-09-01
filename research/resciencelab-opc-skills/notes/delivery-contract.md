@@ -28,8 +28,8 @@ Observable completion criteria: 父仓库只暂存 OPC 相关文件；构建通�
 | 静态能力地图 | 本地构建 | 构建输出与浏览器 | pass | 无 |
 | 已验证真实研究回放 | 想法、能力探索、取证、纠偏、沉淀、完成、重置 | 浏览器、十份公开研究资产与原始工具运行 | pass | 无 |
 | 响应式、键盘、reduced motion | 1440/768/390 | 浏览器证据 | pass | 无 |
-| 父仓库索引 | 根 README、apps README、site 首页 | 差异和链接检查 | pass | 提交时只暂存 OPC 自身的 README 行 |
-| GitHub Pages | 工作流、线上子路径 | Actions 与生产浏览器 | continue | 提交推送后跟踪部署 |
+| 父仓库索引 | 根 README、apps README、site 首页 | 差异和链接检查 | pass | 无 |
+| GitHub Pages | 工作流、线上子路径 | Actions 与生产浏览器 | pass | 无 |
 
 ## 本地验证记录
 
@@ -42,5 +42,16 @@ Observable completion criteria: 父仓库只暂存 OPC 相关文件；构建通�
 - 交互：搜索 `SEO` 返回 1 张卡；重置恢复 10 张；回放重置返回想法入口并把焦点交还按钮。
 - 视口：`1440px`、`768px`、`390px` 均为 `0px` 水平溢出。
 - 可访问性：键盘首焦点为“跳到主要内容”；reduced-motion 命中，动画缩短为 `0.00001s`，滚动变为 `auto`。
-- 资源：`latest-run.json`、`raw-tool-run.json` 和九份公开资产均返回 HTTP 200；浏览器 console 与 page errors 为空。
+- 资源：`latest-run.json`、`raw-tool-run.json` 和十份公开资产均返回 HTTP 200；浏览器 console 与 page errors 为空。
 - 页面截图保存在被忽略的 `.tmp/`，不提交到产品仓库。
+
+## 生产验收记录
+
+- 首次提交：[`475a922`](https://github.com/yydshly/0831_codex_project/commit/475a922bce3f85e6fc52a6bff926a265cdcf1b5b)
+- Pages 工作流：[`33466639740`](https://github.com/yydshly/0831_codex_project/actions/runs/33466639740)，结论 `success`
+- 线上首页：<https://yydshly.github.io/0831_codex_project/demos/opc-skills-capability-lab/>
+- 最终阶段深链接：<https://yydshly.github.io/0831_codex_project/demos/opc-skills-capability-lab/?run=latest#interactive-demo>
+- 默认页：标题正确、10 张能力卡、运行状态为 `GitHub 已验证记录`、正文约 5,000 字符、水平溢出 `0px`。
+- 深链接：直接恢复“沉淀”阶段，状态为 `EVIDENCE ARCHIVED`，当前阶段 6 份产物、全程 10 份公开资产、0 个自动市场结论。
+- 移动端：`390 × 844` 视口水平溢出 `0px`。
+- 公开交付说明返回 HTTP 200；浏览器 console 与 page errors 为空。
