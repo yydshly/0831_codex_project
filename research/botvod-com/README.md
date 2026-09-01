@@ -140,6 +140,6 @@ flowchart LR
 
 ## 变更记录
 
-- `2026-09-01`：将 MediaCMS 的存储、处理、管理、分发和展示能力纳入后期理解，形成 BotVod → Source Adapter → MediaCMS → CDN 的媒体系统全景，并准备 GitHub Pages 发布。
+- `2026-09-01`：将 MediaCMS 的存储、处理、管理、分发和展示能力纳入后期理解，形成 BotVod → Source Adapter → MediaCMS → CDN 的媒体系统全景，并发布到 GitHub Pages。
 - `2026-09-01`：完成能力、场景、架构、流程、价值与风险研究；进一步明确“公网搜索、缓存检索、URL 找源”的边界，并重构 Capability Lab 核心页面。
 - `2026-08-31`：建立研究和交互演示骨架。

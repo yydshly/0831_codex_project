@@ -80,4 +80,4 @@
 | 原有交互回归 | URL 平台识别、缓存命中与队列分支继续可用 | 默认、运行、成功、错误 | 浏览器交互＋DOM 状态 | Stage 5–6 | pass | — |
 | 响应式与键盘 | 新章节在桌面、平板、手机可读且导航可达 | 1440×1000、768×900、390×844 | 浏览器截图、几何与焦点检查 | Stage 7 | pass | — |
 | 外部 README | 一句话摘要指导外部读者理解本研究 | 根 README、研究 README、Demo README | 文件检查、Markdown 链接检查 | Stage 9 | pass | — |
-| GitHub Pages | Demo 进入统一 Pages 站点 | 工作流、站点首页、线上 URL | 构建输出、Actions 状态、HTTP 200 | Stage 9 | continue | 更新工作流并推送验证 |
+| GitHub Pages | Demo 进入统一 Pages 站点 | 工作流、站点首页、线上 URL | 构建输出、Actions 状态、HTTP 200 | Stage 9 | pass | — |

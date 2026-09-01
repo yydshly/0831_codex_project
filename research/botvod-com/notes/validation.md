@@ -30,7 +30,8 @@
 | Pages 相邻 Demo 构建 | `pass` | early.tools Capability Lab 生产构建通过，避免工作流扩展破坏已有发布 |
 | Markdown 相对链接 | `pass` | 检查根 README、Demo README、研究 README 与 5 份相关笔记，0 个失效相对链接 |
 | Mermaid 覆盖 | `pass` | BotVod 研究区共 17 个 Mermaid 图；新增系统全景、MediaCMS 职责架构与转码流程 |
-| GitHub Pages 发布 | `continue` | 工作流已加入 BotVod 构建和 `/demos/botvod-capability-lab/` artifact；等待提交、推送与线上 HTTP 验证 |
+| GitHub Pages 发布 | `pass` | [Actions run 33454320423](https://github.com/yydshly/0831_codex_project/actions/runs/33454320423) 构建与部署成功；根索引、Demo、JS、CSS 均返回 HTTP 200 |
+| 线上浏览器回归 | `pass` | 直接对 [GitHub Pages Demo](https://yydshly.github.io/0831_codex_project/demos/botvod-capability-lab/) 重跑一句话模型、六段生命周期、1440/768/390 几何、键盘焦点、ready/success/invalid 状态；`runtimeErrors=[]` |
 
 ### Revision 3 refinement ledger
 
@@ -43,7 +44,7 @@
 | Stage 5–6 | 原有交互与状态回归 | CDP 状态、格式数量、进度和错误状态 | 两条核心状态路径与无效输入反馈未回归 | pass | — |
 | Stage 7 | 视口、键盘与语义 | 1440/768/390 几何、键盘焦点、原生链接 | 无横向溢出；新增官方链接可达且焦点可见 | pass | — |
 | Stage 8 | reduced-motion 与本地回退 | CDP 媒体偏好模拟＋完整交互 | 降低动效后状态完整，核心内容不依赖外部请求 | pass | — |
-| Stage 9 | README、构建与 Pages 配置 | 0 失效相对链接、两个 Demo 构建通过、工作流 diff | 本地工程闭环完成；线上发布待推送 | continue | 提交并推送，等待 Actions 后验证在线 URL |
+| Stage 9 | README、构建与 Pages 发布 | 0 失效相对链接、两个 Demo 构建通过、Actions 成功、线上 HTTP 与浏览器检查 | 本地与线上工程闭环均完成 | pass | — |
 
 ## 2026-09-01 结果
 
