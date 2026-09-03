@@ -11,3 +11,11 @@
 *.woff2 binary
 *.ttf binary
 *.zip binary
+
+# Generated third-party runtime mirrors for the RealHuman V2 static demo.
+apps/realhuman-scenario-showcase/public/assets/*.js -diff linguist-vendored
+apps/realhuman-scenario-showcase/public/models/**/*.js -diff linguist-vendored
+apps/realhuman-scenario-showcase/public/**/*.wasm binary
+apps/realhuman-scenario-showcase/public/**/*.bin binary
+apps/realhuman-scenario-showcase/public/**/*.onnx binary
+apps/realhuman-scenario-showcase/public/**/*.tflite binary

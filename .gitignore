@@ -27,6 +27,7 @@ coverage/
 .svelte-kit/
 .vite/
 pages-dist/
+test-results/
 
 # Python
 __pycache__/
