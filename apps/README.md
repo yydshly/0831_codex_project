@@ -49,6 +49,6 @@ https://yydshly.github.io/0831_codex_project/demos/<app-slug>/
 | Write Then Publish 独立研究档案 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/write-then-publish-lab/) | `apps/write-then-publish-lab` |
 | OPC Skills 能力与方法地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/opc-skills-capability-lab/) | `apps/opc-skills-capability-lab` |
 | XPADE Face Liquify 能力实验室 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/xpade-face-liquify-lab/) | `apps/xpade-face-liquify-lab` |
-| RealHuman 场景产品中心 V2 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/) | `apps/realhuman-scenario-showcase` |
+| RealHuman 场景产品中心 V2 | [总览](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/) · [照片](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/photo.html) · [视频](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/video.html) · [扩展](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/extensions.html) | `apps/realhuman-scenario-showcase` |
 
 后续新增 Demo 时，在工作流的构建与 artifact 汇总步骤中增加对应子路径，并同步更新根 README 和本索引。

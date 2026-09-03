@@ -6,6 +6,17 @@
 - V2：`https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/`
 - 发布版本：`2.0.0`
 
+## 在线页面
+
+| 页面 | 地址 | 说明 |
+| --- | --- | --- |
+| 产品总览 | [打开](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/) | 选择照片或视频产品线 |
+| 照片能力 | [打开](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/photo.html) | 企业头像、婚纱单人和电商人像底座 |
+| 视频能力 | [打开](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/video.html) | 视频会议、在线面试和远程授课 |
+| 扩展能力 | [打开](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/extensions.html) | 老照片基础修复、风格处理和后期产品模块 |
+
+`engine/r34/index.html` 是上述页面复用的内部冻结能力引擎，只用于独立调试，不作为第五个用户产品入口。
+
 ## 运行
 
 ```powershell

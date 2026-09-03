@@ -24,9 +24,12 @@
       .demo h2 { margin: 16px 0 12px; font-size: clamp(30px, 5vw, 52px); letter-spacing: -.04em; }
       .demo p { max-width: 650px; margin: 0; color: #526267; line-height: 1.75; }
       .demo a { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; padding: 0 20px; border-radius: 12px; background: #122026; color: #f3f1ea; font-weight: 800; text-decoration: none; }
+      .demo-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; min-width: 248px; }
+      .demo-actions a { min-height: 42px; padding: 0 14px; font-size: 13px; }
+      .demo-actions a:first-child { grid-column: 1 / -1; }
       footer { margin-top: 32px; color: #687579; font-size: 13px; }
       footer a { color: inherit; text-underline-offset: 3px; }
-      @media (max-width: 680px) { main { padding-top: 52px; } h1 { font-size: clamp(38px, 12vw, 54px); } .demo { width: 100%; grid-template-columns: minmax(0, 1fr); padding: 28px 20px; } .demo a { width: 100%; max-width: 100%; } }
+      @media (max-width: 680px) { main { padding-top: 52px; } h1 { font-size: clamp(38px, 12vw, 54px); } .demo { width: 100%; grid-template-columns: minmax(0, 1fr); padding: 28px 20px; } .demo a { width: 100%; max-width: 100%; } .demo-actions { width: 100%; min-width: 0; } }
       @media (prefers-color-scheme: dark) {
         body { background: #0c1114; color: #f1f4ee; }
         .eyebrow { color: #99edf0; }
@@ -50,7 +53,12 @@
             <h2>RealHuman 场景产品中心</h2>
             <p>在 XPADE V1 研究结论之上，按照片、实时视频和扩展产品场景组织真实本地能力；V1 页面与地址继续独立保留。</p>
           </div>
-          <a href="./demos/realhuman-scenario-showcase/">打开 V2 →</a>
+          <div class="demo-actions">
+            <a href="./demos/realhuman-scenario-showcase/">产品总览 →</a>
+            <a href="./demos/realhuman-scenario-showcase/photo.html">照片能力</a>
+            <a href="./demos/realhuman-scenario-showcase/video.html">视频能力</a>
+            <a href="./demos/realhuman-scenario-showcase/extensions.html">扩展能力</a>
+          </div>
         </article>
 
         <article class="demo">

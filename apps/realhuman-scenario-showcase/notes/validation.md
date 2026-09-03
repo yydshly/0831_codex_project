@@ -61,7 +61,15 @@
 
 - `archives/realhuman-r34-source-2026-09-02.zip`：`7A8AFDCF0E4083B638A96121C5ED74E4538F601F55026F73063ACF0DBC7E3B05`。
 - `archives/realhuman-r34-dist-2026-09-02.zip`：`06B5D0D78DE1F41657913FD7E4AFD0555AAF233D8C0DBF2F5D94B8A5C547206E`。
-- 没有远端提交、推送、部署或覆盖。
+- 归档隔离阶段没有远端提交、推送、部署或覆盖；随后 V2 以独立目录 `apps/realhuman-scenario-showcase/` 发布，不修改 V1 源码和路径。
+
+## V2 发布证据
+
+- Git 提交：`61ee0a4c2911fa58c364cee69702f30cac42eb4a`。
+- 发布标签：`realhuman-v2.0.0`。
+- GitHub Pages 工作流 `Deploy GitHub Pages` 已通过。
+- 对外页面包括产品总览、照片能力、视频能力和扩展能力四项；内部 `engine/r34/index.html` 仅作为冻结引擎和调试入口。
+- V1 `demos/xpade-face-liquify-lab/` 与 V2 `demos/realhuman-scenario-showcase/` 均返回 HTTP 200，地址互不覆盖。
 
 ## 当前边界
 
