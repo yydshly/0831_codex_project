@@ -38,17 +38,17 @@ https://yydshly.github.io/0831_codex_project/demos/<app-slug>/
 
 因此每个应用都要支持 `/0831_codex_project/demos/<app-slug>/` 资源基路径，或只使用可靠的相对路径。单页应用优先使用 hash 路由；GitHub Pages 不提供普通服务器式的 history fallback。
 
-当前在线 Demo：
+当前在线 Demo。研究编号与根 README 的稳定编号一致；表格按研究编号排列：
 
-| Demo | 在线地址 | 构建来源 |
-| --- | --- | --- |
-| BotVod 媒体系统能力地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/botvod-capability-lab/) | `apps/botvod-capability-lab` |
-| early.tools 中文能力地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | `apps/early-tools-capability-lab` |
-| OpenBrowser 原理与后期价值地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/openbrowser-architecture-lab/) | `apps/openbrowser-architecture-lab` |
-| Everyone Can Use English 技术能力图谱 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/everyone-can-use-english-capability-lab/) | `apps/everyone-can-use-english-capability-lab` |
-| Write Then Publish 独立研究档案 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/write-then-publish-lab/) | `apps/write-then-publish-lab` |
-| OPC Skills 能力与方法地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/opc-skills-capability-lab/) | `apps/opc-skills-capability-lab` |
-| XPADE Face Liquify 能力实验室 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/xpade-face-liquify-lab/) | `apps/xpade-face-liquify-lab` |
-| RealHuman 场景产品中心 V2 | [总览](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/) · [照片](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/photo.html) · [视频](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/video.html) · [扩展](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/extensions.html) | `apps/realhuman-scenario-showcase` |
+| 研究编号 | Demo | 在线地址 | 构建来源 |
+| --- | --- | --- | --- |
+| `001` | BotVod 媒体系统能力地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/botvod-capability-lab/) | `apps/botvod-capability-lab` |
+| `002` | Everyone Can Use English 技术能力图谱 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/everyone-can-use-english-capability-lab/) | `apps/everyone-can-use-english-capability-lab` |
+| `003` | early.tools 中文能力地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/early-tools-capability-lab/) | `apps/early-tools-capability-lab` |
+| `005` | XPADE Face Liquify 能力实验室 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/xpade-face-liquify-lab/) | `apps/xpade-face-liquify-lab` |
+| `006` | RealHuman 场景产品中心 V2 | [总览](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/) · [照片](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/photo.html) · [视频](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/video.html) · [扩展](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/extensions.html) | `apps/realhuman-scenario-showcase` |
+| `007` | Write Then Publish 独立研究档案 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/write-then-publish-lab/) | `apps/write-then-publish-lab` |
+| `008` | OpenBrowser 原理与后期价值地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/openbrowser-architecture-lab/) | `apps/openbrowser-architecture-lab` |
+| `009` | OPC Skills 能力与方法地图 | [在线访问](https://yydshly.github.io/0831_codex_project/demos/opc-skills-capability-lab/) | `apps/opc-skills-capability-lab` |
 
 后续新增 Demo 时，在工作流的构建与 artifact 汇总步骤中增加对应子路径，并同步更新根 README 和本索引。
