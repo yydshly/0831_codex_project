@@ -30,6 +30,8 @@
   </tr>
 </table>
 
+RealHuman V2 总览现已加入[双引擎完整产品全景](https://yydshly.github.io/0831_codex_project/demos/realhuman-scenario-showcase/#system-map)：本地人像库负责实时、稳定、可控的原像素处理，生成式大模型负责换装、闭眼修复和缺失内容补全，产品控制层通过场景路由、蒙版、身份检查和规格验收把两者组织成可交付流程。当前 V2 尚未接入外部生成式图像 API，不会把提示词描述当成已实现能力。
+
 ## 研究索引
 
 | 编号 | 研究项目 | 上游仓库 | 研究重点 | 状态 | 研究笔记 | Demo | 最近更新 |

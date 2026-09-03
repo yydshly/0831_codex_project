@@ -140,6 +140,60 @@ function renderHome() {
         <h2>共享底座，不混淆产品。</h2>
         <div><article><span>01</span><strong>人物感知</strong><p>人脸检测、468 点、人物分割与区域保护。</p></article><article><span>02</span><strong>可控处理</strong><p>参数、回退、差异、撤销和明确的能力状态。</p></article><article><span>03</span><strong>交付边界</strong><p>照片以文件交付；视频以实时画面为目标，会议输出尚未接入。</p></article></div>
       </section>
+      <section class="system-map" id="system-map" aria-labelledby="system-map-title">
+        <header>
+          <div><p class="eyebrow">FULL PRODUCT MAP / LOCAL + GENERATIVE</p><h2 id="system-map-title">一张图理解完整产品。</h2></div>
+          <p>本地库负责实时、稳定和确定性处理；生成式大模型负责创造原图没有的内容；产品控制层决定何时调用、改哪里，以及结果是否可以交付。</p>
+        </header>
+        <div class="system-inputs" aria-label="三类输入">
+          <article><span>INPUT 01</span><strong>单张照片</strong><p>允许高质量离线处理与人工确认。</p></article>
+          <article><span>INPUT 02</span><strong>摄像头</strong><p>要求低延迟、连续跟踪与动态稳定。</p></article>
+          <article><span>INPUT 03</span><strong>已有视频</strong><p>实时底座处理；复杂生成采用离线关键帧链路。</p></article>
+        </div>
+        <div class="system-arrow" aria-hidden="true"><span>人物、质量与任务分析</span><i>↓</i></div>
+        <div class="system-router">
+          <span>ROUTER / 我们的产品控制层</span>
+          <strong>原像素能完成或要求实时 → 本地引擎；必须创造新内容 → 生成式引擎</strong>
+        </div>
+        <div class="system-engines">
+          <article class="local-engine">
+            <header><span>当前核心 · 已实现底座</span><strong>本地人像引擎</strong></header>
+            <div><b>识别与跟踪</b><p>人脸、468 点、人物与皮肤分割、摄像头连续跟随。</p></div>
+            <div><b>原像素处理</b><p>补光、肤色、磨皮、降噪、局部妆容、裁切与背景。</p></div>
+            <div><b>几何处理</b><p>XPADE 类脸宽、下颌、下巴和嘴角调整，不重新生成整张脸。</p></div>
+            <footer>优势：低延迟 · 可控 · 可重复 · 可本地运行</footer>
+          </article>
+          <div class="engine-join" aria-label="两类引擎由产品按需组合"><span>按需组合</span><i>+</i></div>
+          <article class="generative-engine">
+            <header><span>下一阶段 · 尚未接入</span><strong>生成式大模型</strong></header>
+            <div><b>局部内容重建</b><p>闭眼修复、视线修复以及严重破损区域补全。</p></div>
+            <div><b>业务内容生成</b><p>换装、复杂发型、专业背景、布光和老照片内容恢复。</p></div>
+            <div><b>主要风险</b><p>可能改变人物身份、表情或无关区域，多次结果也可能不同。</p></div>
+            <footer>优势：能创造新内容 · 效果上限高 · 适合离线生成</footer>
+          </article>
+        </div>
+        <div class="system-arrow" aria-hidden="true"><span>统一进入产品质量控制</span><i>↓</i></div>
+        <div class="system-guard">
+          <header><span>CONTROL + QUALITY</span><strong>模型不是直接交付，结果必须经过我们的控制层</strong></header>
+          <ol>
+            <li><span>01</span><b>场景模板</b><small>固定参数与提示词</small></li>
+            <li><span>02</span><b>蒙版限制</b><small>只允许目标区域进入结果</small></li>
+            <li><span>03</span><b>身份检查</b><small>五官与人物相似度</small></li>
+            <li><span>04</span><b>规格检查</b><small>尺寸、构图和业务规则</small></li>
+            <li><span>05</span><b>失败回退</b><small>重试、本地处理或人工确认</small></li>
+          </ol>
+          <p><code>最终像素 = 原图 ×（1 − 蒙版）+ 处理结果 × 蒙版</code><span>模型越界修改的区域由本地合成强制恢复为原图。</span></p>
+        </div>
+        <div class="system-arrow" aria-hidden="true"><span>按真实业务交付</span><i>↓</i></div>
+        <div class="system-products" aria-label="产品场景">
+          <article><span>照片</span><strong>企业职业头像</strong></article>
+          <article><span>照片</span><strong>证件照候选</strong></article>
+          <article><span>照片</span><strong>婚纱与电商人像</strong></article>
+          <article><span>修复</span><strong>老照片恢复</strong></article>
+          <article><span>实时</span><strong>视频会议与直播</strong></article>
+        </div>
+        <footer class="system-conclusion"><strong>项目价值</strong><p>不是整理一组提示词，而是把本地确定性能力与生成式能力组合成可实时、可控、可验证、可批量交付的人像产品。</p></footer>
+      </section>
     </main>`
 }
 
